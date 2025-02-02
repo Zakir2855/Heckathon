@@ -22,14 +22,8 @@ function SearchBar() {
   //default results-------------------
   useEffect(() => {
     fetch(
-      "https://api.github.com/search/repositories?q=node+in:name+language:javascript&sort=stars&order=desc&per_page=10",
-      {
-        method: "GET",
-        headers: {
-          Authorization:
-            "Bearer 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",
-        },
-      }
+      "https://api.github.com/search/repositories?q=node+in:name+language:javascript&sort=stars&order=desc&per_page=10"
+     
     )
       .then((res) => res.json())
       .then((rt) => {
@@ -48,14 +42,8 @@ function SearchBar() {
 
     if (type === "language") {
       fetch(
-        `https://api.github.com/search/repositories?q=node+in:name+language:${input}&sort=stars&order=desc`,
-        {
-          method: "GET",
-          headers: {
-            Authorization:
-              "Bearer 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",
-          },
-        }
+        `https://api.github.com/search/repositories?q=node+in:name+language:${input}&sort=stars&order=desc`
+     
       )
         .then((res) => res.json())
         .then((rt) => setData(rt.items))
