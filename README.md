@@ -25,6 +25,7 @@ Welcome to the github explorer this application provides a superficial surfing o
 2. Install dependencies: `npm install`
 3. Run the application: `npm run dev`
 
+# Deployed at https://heckathon-flame.vercel.app
 #Built By Zakir khan,
  Kailash Parihar and
   Mayank yadav
